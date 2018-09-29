@@ -133,9 +133,9 @@ class JSONResponse(HttpResponse):
 
         self['Cache-Control'] = 'max-age=0,no-cache,no-store'
 
-    @property
-    def json(self):
-        return json.loads(self.content)
+#    @property
+#    def json(self):
+#        return json.loads(self.content)
 
 
 class JSONResponseMixin(object):
